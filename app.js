@@ -1,4 +1,4 @@
-const apiUrl = 'YOUR_GOOGLE_APPS_SCRIPT_URL';  // Replace with your Apps Script URL
+const apiUrl = 'https://script.google.com/macros/s/AKfycby2LomJsyJt4TI6QjvwAoj8yS_466ObrtT0BSC8gmK04jNxlt_sR-C_jxu1jNyqThpw/exec';  // Replace with your Apps Script URL
 
 function onSignIn(googleUser) {
     const profile = googleUser.getBasicProfile();
