@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping List PWA</title>
+    <link rel="manifest" href="manifest.json">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+</head>
+<body>
+    <h1>Shopping List & To-Do PWA</h1>
+
+    <!-- Google Sign-In Button -->
+    <div class="g-signin2" data-onsuccess="onSignIn"></div>
+    <div id="content" style="display:none;">
+        <h2>Shopping List</h2>
+        <ul id="shopping-list"></ul>
+        <form id="add-item-form">
+            <input type="text" id="item" placeholder="Item">
+            <input type="number" id="quantity" placeholder="Quantity">
+            <button type="submit">Add Item</button>
+        </form>
+
+        <h2>To-Do List</h2>
+        <ul id="todo-list"></ul>
+        <form id="add-task-form">
+            <input type="text" id="task" placeholder="Task">
+            <input type="date" id="due-date">
+            <button type="submit">Add Task</button>
+        </form>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
